@@ -1,0 +1,141 @@
+.wrap{
+    width: 100%;
+}
+
+header, section, footer{
+    width: 100%;
+     /* background-color: lightblue; */
+}
+footer{
+    background-color:#5D5852 ;
+}
+
+.in_header,.section_wrap ,.footer_wrap{
+    max-width: 1420px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+   /*  background-color: antiquewhite;  */
+}
+.section_con{
+  /*   background-color: aliceblue; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);  
+}
+
+.title>p:first-child{
+    font-family: "Noto Serif", serif;
+    font-size:30px;
+    color:#DBA858;
+    margin-bottom: 11px;
+}
+.title>p:nth-child(2){
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.more_btn{
+    width: 150px;
+    height: 53px;
+    background-color:#E0C389;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more_btn>p{
+    font-size: 16px;
+    line-height: 54px;
+    text-align: center;
+
+}
+.sec6_wrap, .review_con>.con{
+    display: flex;
+    flex-direction: column;
+}
+.review_con, .date_id, .bt_txt_2{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1400px){
+    .title {
+        position: absolute;
+        top: 50%;
+        transform: translate(16%, -50%);
+    }
+}
+
+@media screen and (max-width:1024px){
+    .title>p:first-child {
+        font-size: 25px;
+    }
+    .title>p:nth-child(2) {
+        font-size: 35px;
+        margin-bottom: 41px;
+    }
+    .more_btn {
+        width: 121px;
+        height: 42px;
+    }
+    .more_btn>a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .bottom, .top {
+        padding: 14px 15.5px;
+    }
+    .bottom>img {
+        width: 45px;
+        height: 45px;
+        margin-right: 9px;
+    }
+    .bt_txt_2>.group>p:nth-child(2) {
+        margin-right: -6px;
+    }
+}
+
+@media screen and (max-width:770px){
+    .title {
+        width: 100%;
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title>p:first-child{
+        font-size:25px;
+        margin-bottom: 9px;
+    }
+    .title>p:nth-child(2){
+        font-size: 35px;   
+        margin-bottom: 19px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .section_1{
+        height: 86vh;    
+    }
+
+    .title>p:first-child{
+        font-size:20px;
+        
+    }
+    .title>p:nth-child(2){
+        font-size: 30px;
+    }
+}
